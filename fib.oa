@@ -1,0 +1,12 @@
+let fib = fn(n)
+    let a = 1
+    let b = 1
+    range(2, n):iter(
+        fn(x)
+            let c = b
+            b = c + a
+            a = c
+        end)
+end
+
+io:print(fib(5)) // 5
