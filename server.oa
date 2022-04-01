@@ -1,0 +1,9 @@
+let socket = io:socket:open(8080)
+while socket:accepting
+    let connection = socket:waitForConnection()
+    connection:send("HTTP/1.1 200\n")
+    connection:send("Content-Type: text/html\n")
+    connection:send("\n")
+    connection:send("Hello world! The time is " + time:now:toString())
+    connection:close()
+end
