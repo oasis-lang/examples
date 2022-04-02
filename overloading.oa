@@ -1,0 +1,9 @@
+let addOverloaded = proto
+  let v = 12
+  let __plus = fn(x) 
+    io:print("I am being added with " + x)
+    return this:v + x
+  end
+end
+
+io:print(addOverloaded + 3)
