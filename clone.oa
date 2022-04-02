@@ -1,0 +1,13 @@
+let a = proto
+  let x = 3
+  let y = 4
+ end
+ 
+ let b = a
+ 
+ a:x = 5
+ io:print(b:x) // 5
+ 
+ let c = clone a
+ a:y = 6
+ io:print(c:y) // 4
