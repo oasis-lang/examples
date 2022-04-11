@@ -1,0 +1,35 @@
+io:print("Enter a number between 1 and 10:")
+let num = type:num(io:read())
+
+is num
+  1
+    io:print("One")
+  end
+  2
+    io:print("Two")
+  end
+  3
+    io:print("Three")
+  end
+  4
+    io:print("Four")
+  end
+  5
+    io:print("Five")
+  end
+  6
+    io:print("Six")
+  end
+  7
+    io:print("Seven")
+  end
+  8
+    io:print("Eight")
+  end
+  9
+    io:print("Nine")
+  end
+  else
+    io:print("That's not between 1 and 10, dingus!")
+  end
+end
